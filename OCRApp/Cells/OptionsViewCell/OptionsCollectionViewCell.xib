@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OptionsCollectionViewCell" id="gTV-IL-0wX" customClass="OptionsCollectionViewCell" customModule="OCRApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-Wo-IPj" customClass="BaseUIView" customModule="OCRApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyu-9b-dNu" userLabel="Color View" customClass="BaseUIView" customModule="OCRApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tickmark" translatesAutoresizingMaskIntoConstraints="NO" id="wal-UA-9Kc">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yyu-9b-dNu" firstAttribute="centerX" secondItem="CPe-Wo-IPj" secondAttribute="centerX" id="BTc-pB-kTJ"/>
+                            <constraint firstItem="yyu-9b-dNu" firstAttribute="width" secondItem="CPe-Wo-IPj" secondAttribute="width" id="E1t-Lx-I1g"/>
+                            <constraint firstItem="wal-UA-9Kc" firstAttribute="height" secondItem="CPe-Wo-IPj" secondAttribute="height" id="L22-G2-7rt"/>
+                            <constraint firstItem="wal-UA-9Kc" firstAttribute="centerX" secondItem="CPe-Wo-IPj" secondAttribute="centerX" id="L6g-bg-R9Z"/>
+                            <constraint firstItem="yyu-9b-dNu" firstAttribute="height" secondItem="CPe-Wo-IPj" secondAttribute="height" id="N6K-bF-S8n"/>
+                            <constraint firstItem="wal-UA-9Kc" firstAttribute="width" secondItem="CPe-Wo-IPj" secondAttribute="width" id="eAl-iJ-5e7"/>
+                            <constraint firstItem="wal-UA-9Kc" firstAttribute="centerY" secondItem="CPe-Wo-IPj" secondAttribute="centerY" id="h8Q-of-UkQ"/>
+                            <constraint firstItem="yyu-9b-dNu" firstAttribute="centerY" secondItem="CPe-Wo-IPj" secondAttribute="centerY" id="lyu-BI-AHr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CPe-Wo-IPj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="105-qJ-P6Z"/>
+                <constraint firstAttribute="bottom" secondItem="CPe-Wo-IPj" secondAttribute="bottom" id="M1U-e6-k6g"/>
+                <constraint firstItem="CPe-Wo-IPj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hPc-RZ-CfW"/>
+                <constraint firstAttribute="trailing" secondItem="CPe-Wo-IPj" secondAttribute="trailing" id="v1d-R0-M61"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="colorView" destination="yyu-9b-dNu" id="8Jv-Me-3gw"/>
+                <outlet property="imgTick" destination="wal-UA-9Kc" id="PWy-Mv-LuC"/>
+                <outlet property="viewContainer" destination="CPe-Wo-IPj" id="xlF-0B-DTF"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="73"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tickmark" width="13" height="10"/>
+    </resources>
+</document>

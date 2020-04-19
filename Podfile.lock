@@ -1,0 +1,182 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.7.0)
+  - AnimatedCollectionViewLayout (1.0.1)
+  - AppAuth (1.3.0):
+    - AppAuth/Core (= 1.3.0)
+    - AppAuth/ExternalUserAgent (= 1.3.0)
+  - AppAuth/Core (1.3.0)
+  - AppAuth/ExternalUserAgent (1.3.0)
+  - ASToast (1.1.2)
+  - Cache (5.2.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - DynamicBlurView (2.0.2)
+  - EasyRealm (3.4.0):
+    - RealmSwift (~> 3.10)
+  - Fabric (1.10.2)
+  - FCAlertView (1.4.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.3.1):
+    - GTMSessionFetcher/Full (= 1.3.1)
+  - GTMSessionFetcher/Core (1.3.1)
+  - GTMSessionFetcher/Full (1.3.1):
+    - GTMSessionFetcher/Core (= 1.3.1)
+  - Hero (1.1.0)
+  - HFCardCollectionViewLayout (0.4.2)
+  - HGPlaceholders (0.3.0)
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
+  - IQKeyboardManagerSwift (5.0.8)
+  - Kingfisher (4.6.3)
+  - Lightbox (2.3.0):
+    - Imaginary (~> 4.0)
+  - MIBlurPopup (1.0.0)
+  - PKCCrop (0.2.4)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
+  - QRCode (2.0)
+  - Realm (3.21.0):
+    - Realm/Headers (= 3.21.0)
+  - Realm/Headers (3.21.0)
+  - RealmSwift (3.21.0):
+    - Realm (= 3.21.0)
+  - Shimmer (1.0.2)
+  - SnapKit (4.0.0)
+  - Spring (1.0.6)
+  - Spruce (1.0.0)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - TableViewReloadAnimation (0.0.5)
+  - ViewAnimator (2.7.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (= 2.3.0)
+  - Alamofire (= 4.7.0)
+  - AnimatedCollectionViewLayout
+  - ASToast (= 1.1.2)
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`, branch `wip/swift4`)
+  - Crashlytics
+  - EasyRealm
+  - Fabric
+  - FCAlertView (= 1.4.0)
+  - GoogleSignIn
+  - Hero (= 1.1.0)
+  - HFCardCollectionViewLayout
+  - HGPlaceholders (= 0.3.0)
+  - IQKeyboardManagerSwift (= 5.0.8)
+  - Kingfisher (= 4.6.3)
+  - Lightbox
+  - MIBlurPopup
+  - PKCCrop
+  - PopupDialog (= 0.7.1)
+  - QRCode
+  - Shimmer
+  - SnapKit (= 4.0.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - Spruce (~> 1.0.0)
+  - SwiftMessages
+  - TableViewReloadAnimation (= 0.0.5)
+  - ViewAnimator
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - AnimatedCollectionViewLayout
+    - AppAuth
+    - ASToast
+    - Cache
+    - Crashlytics
+    - DynamicBlurView
+    - EasyRealm
+    - Fabric
+    - FCAlertView
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - Hero
+    - HFCardCollectionViewLayout
+    - HGPlaceholders
+    - Imaginary
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Lightbox
+    - MIBlurPopup
+    - PKCCrop
+    - PopupDialog
+    - QRCode
+    - Realm
+    - RealmSwift
+    - Shimmer
+    - SnapKit
+    - Spruce
+    - SwiftMessages
+    - TableViewReloadAnimation
+    - ViewAnimator
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: wip/swift4
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: db432ca1b1a3d8f83ee1f881208c0c960a325e73
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
+  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  ASToast: 490fa575d7fdec1b847a9c24b58539e8c4e4a531
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  EasyRealm: 284b0f26de97e84821772aa61a363f9617e44c61
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  FCAlertView: fdddd63381898c1d1a5a20c9f084fbd2c6d12f8b
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
+  Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
+  HFCardCollectionViewLayout: 88cc7deb86baae9396450d9db323081cce50da59
+  HGPlaceholders: 2df01c51b04a30acd0b8c9c7161c7cdde4541109
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
+  Lightbox: d317750e4132bfb871a5307cfe0a2c7d6a583c65
+  MIBlurPopup: 7e855df6a79d13bc0840519c2ec9bac50b1ac01a
+  PKCCrop: ffee8530f35380fd69e562eb40ea2536a6c0a5cf
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
+  RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  TableViewReloadAnimation: f3a4c4048efbc56331be98075f26a2e533a14c16
+  ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
+
+PODFILE CHECKSUM: fb05ed40b8f297a80bf243ae0263ea72ae79347f
+
+COCOAPODS: 1.9.1

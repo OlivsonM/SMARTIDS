@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCollectionCell" id="gTV-IL-0wX" customClass="CardCollectionCell" customModule="OCRApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="247"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzv-kB-WxI" customClass="CardsView" customModule="OCRApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="247"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="414" id="OcX-hf-qcM">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setConstraint">
+                                        <real key="value" value="414"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="247" id="VMx-He-JUN">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setConstraint">
+                                        <real key="value" value="247"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="xhs-E7-FuM">
+                        <rect key="frame" x="8.5" y="0.0" width="333" height="209"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="209" id="62o-DA-0Pf">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setConstraint">
+                                        <real key="value" value="209"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="333" id="ex3-oy-paM">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setConstraint">
+                                        <real key="value" value="333"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xhs-E7-FuM" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="1bg-LT-zsa"/>
+                <constraint firstItem="Lzv-kB-WxI" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="JSU-rg-nnT"/>
+                <constraint firstItem="Lzv-kB-WxI" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="VfU-gK-IvS"/>
+                <constraint firstItem="xhs-E7-FuM" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="lqm-Hy-D79"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="xhs-E7-FuM"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cardView" destination="Lzv-kB-WxI" id="bEg-if-5Jf"/>
+                <outlet property="imgCard" destination="xhs-E7-FuM" id="6Fp-bI-1ft"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card1" width="333" height="209"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdsListingCollectionViewCell" id="gTV-IL-0wX" customClass="AdsListingCollectionViewCell" customModule="OCRApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaV-EX-00z">
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="128"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-oz-WOe">
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="102.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="EZX-r2-FNL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-aJ-qvQ">
+                                <rect key="frame" x="10" y="102.5" width="228" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontNameTheme" value="fontCabourgBold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="I am building this app with new structure and its a good experience structure and its a good experience" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-0v-amx">
+                                <rect key="frame" x="10" y="124.5" width="228" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XIw-aJ-qvQ" firstAttribute="leading" secondItem="ZaV-EX-00z" secondAttribute="leading" constant="10" id="AW3-Wg-7Pf"/>
+                            <constraint firstItem="RBo-0v-amx" firstAttribute="leading" secondItem="ZaV-EX-00z" secondAttribute="leading" constant="10" id="AlT-EZ-pPK"/>
+                            <constraint firstAttribute="trailing" secondItem="mLn-oz-WOe" secondAttribute="trailing" id="MaV-az-ywB"/>
+                            <constraint firstItem="mLn-oz-WOe" firstAttribute="leading" secondItem="ZaV-EX-00z" secondAttribute="leading" id="Wbt-oT-GUr"/>
+                            <constraint firstAttribute="trailing" secondItem="RBo-0v-amx" secondAttribute="trailing" constant="10" id="ZRe-Lp-ktY"/>
+                            <constraint firstItem="RBo-0v-amx" firstAttribute="top" secondItem="XIw-aJ-qvQ" secondAttribute="bottom" constant="2" id="aPZ-gE-de9"/>
+                            <constraint firstItem="mLn-oz-WOe" firstAttribute="height" secondItem="ZaV-EX-00z" secondAttribute="height" multiplier="0.8" id="cId-jh-9dA"/>
+                            <constraint firstItem="XIw-aJ-qvQ" firstAttribute="top" secondItem="mLn-oz-WOe" secondAttribute="bottom" id="k9J-sd-0S7"/>
+                            <constraint firstAttribute="trailing" secondItem="XIw-aJ-qvQ" secondAttribute="trailing" constant="10" id="kRj-j3-pQa"/>
+                            <constraint firstItem="mLn-oz-WOe" firstAttribute="top" secondItem="ZaV-EX-00z" secondAttribute="top" id="zDO-Oo-SeA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="_borderType" value="solid"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="borderThemeColor" value="lightGreyText"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZaV-EX-00z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dfc-xK-zEy"/>
+                <constraint firstItem="ZaV-EX-00z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qrx-IX-mVG"/>
+                <constraint firstAttribute="trailing" secondItem="ZaV-EX-00z" secondAttribute="trailing" id="U2u-nj-ZJw"/>
+                <constraint firstAttribute="bottom" secondItem="ZaV-EX-00z" secondAttribute="bottom" id="efc-Oz-c2b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="248" height="221"/>
+            <connections>
+                <outlet property="imgAd" destination="mLn-oz-WOe" id="5zl-LW-y1Z"/>
+                <outlet property="lblAd" destination="XIw-aJ-qvQ" id="emj-C9-eXX"/>
+                <outlet property="lblAdDescription" destination="RBo-0v-amx" id="e6R-Xn-wBu"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="92.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
